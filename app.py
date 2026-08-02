@@ -2,8 +2,8 @@ import subprocess
 
 username = input("Enter your username: ")
 
-print("Welcome", username)
+print(f"Welcome {username}")
 
-command = input("Enter a command: ")
+command = input("Enter a command: ").split()
 
-subprocess.call(command, shell=True)
+subprocess.run(command, check=True)
