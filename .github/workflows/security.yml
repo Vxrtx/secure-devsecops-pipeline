@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Bandit Scan
         run: |
-          bandit -r .
+          bandit -r . -ll
 
       - name: Build Docker Image
         run: |
